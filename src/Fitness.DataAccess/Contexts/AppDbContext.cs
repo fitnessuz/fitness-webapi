@@ -18,7 +18,7 @@ public class AppDbContext : DbContext
     public DbSet<Message> Messages { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Teacher> Teachers { get; set; }
-    public DbSet<Equempent> Equempents { get; set; }
+    public DbSet<Equepment> Equempents { get; set; }
     public DbSet<Attachment> Attachments { get; set; }
     public DbSet<CartProduct> CartProducts { get; set; }
     public DbSet<OrderProduct> OrderProducts { get; set; }

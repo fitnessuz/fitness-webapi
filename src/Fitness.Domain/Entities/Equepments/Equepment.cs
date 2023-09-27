@@ -2,7 +2,7 @@ using Fitness.Domain.Commons;
 
 namespace Fitness.Domain.Entities;
 
-public class Equempent : Auditable
+public class Equepment : Auditable
 {
     public string Title { get; set; }
     public string Description { get; set; }

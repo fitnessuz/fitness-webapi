@@ -8,7 +8,7 @@ public class CartEquepment : Auditable
     public User User { get; set; }
     
     public long EquepmentId { get; set; }
-    public Equempent Equepment { get; set; }
+    public Equepment Equepment { get; set; }
     
     public int Quantity { get; set; }
 }

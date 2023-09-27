@@ -20,7 +20,7 @@ public class UnitOfWork : IUnitOfWork
         ProductRepository = new Repository<Product>(dbContext);
         TeacherRepository = new Repository<Teacher>(dbContext);
         MessageRepository = new Repository<Message>(dbContext);
-        EquempentRepository = new Repository<Equempent>(dbContext);
+        EquempentRepository = new Repository<Equepment>(dbContext);
         AttachmentRepository = new Repository<Attachment>(dbContext);
         CartProductRepository = new Repository<CartProduct>(dbContext);
         OrderProductRepository = new Repository<OrderProduct>(dbContext);
@@ -35,7 +35,7 @@ public class UnitOfWork : IUnitOfWork
     public IRepository<Product> ProductRepository { get; }
     public IRepository<Teacher> TeacherRepository { get; }
     public IRepository<Message> MessageRepository { get; }
-    public IRepository<Equempent> EquempentRepository { get; }
+    public IRepository<Equepment> EquempentRepository { get; }
     public IRepository<Attachment> AttachmentRepository { get; }
     public IRepository<CartProduct> CartProductRepository { get; }
     public IRepository<OrderProduct> OrderProductRepository { get; }

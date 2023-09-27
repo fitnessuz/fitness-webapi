@@ -15,7 +15,7 @@ public interface IUnitOfWork : IDisposable
     IRepository<Product> ProductRepository { get; }
     IRepository<Teacher> TeacherRepository { get; }
     IRepository<Message> MessageRepository { get; }
-    IRepository<Equempent> EquempentRepository { get; }
+    IRepository<Equepment> EquempentRepository { get; }
     IRepository<Attachment> AttachmentRepository { get; }
     IRepository<CartProduct> CartProductRepository { get; }
     IRepository<OrderProduct> OrderProductRepository { get; }
