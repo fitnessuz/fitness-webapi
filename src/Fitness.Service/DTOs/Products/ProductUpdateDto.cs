@@ -1,17 +1,13 @@
-using Fitness.Domain.Commons;
+namespace Fitness.Service.DTOs;
 
-namespace Fitness.Domain.Entities.Products;
-
-public class Product : Auditable
+public class ProductUpdateDto
 {
+    public long Id { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
     public string Brand { get; set; }
     public int  Quantity { get; set; }
     public decimal Price { get; set; }
     public long ProductCategoryId { get; set; }
-    public ProductCategory Category { get; set; }
-    
     public long? AttachmentId { get; set; }
-    public Attachment Attachment { get; set; }
 }

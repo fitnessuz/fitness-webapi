@@ -16,8 +16,50 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <ItemGroup>
+
+
+
+
+
+
+
+
+
+
+
+
       <ProjectReference Include="..\Fitness.DataAccess\Fitness.DataAccess.csproj" />
+
+
+
+
+
+
+
+
+
+
+
+
     </ItemGroup>
 
 

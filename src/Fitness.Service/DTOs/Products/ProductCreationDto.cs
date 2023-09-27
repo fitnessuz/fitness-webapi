@@ -1,8 +1,6 @@
-using Fitness.Domain.Commons;
+namespace Fitness.Service.DTOs;
 
-namespace Fitness.Domain.Entities.Products;
-
-public class Product : Auditable
+public class ProductCreationDto
 {
     public string Title { get; set; }
     public string Description { get; set; }
@@ -10,8 +8,5 @@ public class Product : Auditable
     public int  Quantity { get; set; }
     public decimal Price { get; set; }
     public long ProductCategoryId { get; set; }
-    public ProductCategory Category { get; set; }
-    
     public long? AttachmentId { get; set; }
-    public Attachment Attachment { get; set; }
 }
