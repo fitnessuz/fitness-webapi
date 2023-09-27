@@ -1,6 +1,6 @@
+using Fitness.Domain.Commons;
 using System.Linq.Expressions;
 using Fitness.DataAccess.Contexts;
-using Fitness.Domain.Commons;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -20,28 +20,24 @@ public class Repository<T> : IRepository<T> where T : Auditable
     public async Task<T> AddAsync(T entity)
     {
         await table.AddAsync(entity);
-
         return entity;
     }
 
     public async Task<T> UpdateAsync(T entity)
     {
         EntityEntry<T> entry = this.dbContext.Update(entity);
-
         return entry.Entity;
     }
 
     public async Task DestroyAsync(Expression<Func<T, bool>> expression)
     {
         var entity = await this.SelectAsync(expression);
-
         table.Remove(entity);
     }
 
     public async Task DeleteAsync(Expression<Func<T, bool>> expression)
     {
         var entity = await this.SelectAsync(expression);
-
         entity.IsDeleted = true;
     }
 

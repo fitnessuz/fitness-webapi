@@ -1,9 +1,9 @@
 using Fitness.Domain.Entities;
 using Fitness.Domain.Entities.Carts;
-using Fitness.Domain.Entities.Messages;
+using Microsoft.EntityFrameworkCore;
 using Fitness.Domain.Entities.Orders;
 using Fitness.Domain.Entities.Products;
-using Microsoft.EntityFrameworkCore;
+using Fitness.Domain.Entities.Messages;
 using Attachment = System.Net.Mail.Attachment;
 
 namespace Fitness.DataAccess.Contexts;
