@@ -2,6 +2,6 @@ namespace Fitness.Domain.Enums;
 
 public enum Days
 {
-    Odd, // toq
+    Odd = 1, // toq
     Even // juft
 }
