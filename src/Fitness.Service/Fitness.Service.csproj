@@ -71,4 +71,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    <ItemGroup>
+      <Folder Include="Interfaces\Auth\" />
+      <Folder Include="Interfaces\Equepments\" />
+      <Folder Include="Interfaces\Messages\" />
+      <Folder Include="Interfaces\Attachments\" />
+      <Folder Include="Interfaces\Carts\" />
+      <Folder Include="Interfaces\Korzinka\" />
+      <Folder Include="Interfaces\Plans\" />
+      <Folder Include="Interfaces\Products\" />
+      <Folder Include="Interfaces\Teachers\" />
+      <Folder Include="Interfaces\Orders\" />
+    </ItemGroup>
+
+
+
+
+
+
+
+
+
+
 </Project>
