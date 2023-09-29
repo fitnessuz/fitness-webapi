@@ -11,6 +11,5 @@ public interface IRepository<T> where T : Auditable
     Task DestroyAsync(Expression<Func<T, bool>> expression);
     Task<T> SelectAsync(Expression<Func<T, bool>> expression, string[] includes = null);
     IQueryable<T> SelectAll(Expression<Func<T, bool>> expression = null, string[] includes = null, bool isTracking = true);
-    
     Task SaveAsync();
 }

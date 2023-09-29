@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Fitness.Domain.Entities;
 
-namespace Fitness.Service.Interfaces.Auth
+namespace Fitness.Service.Interfaces.Auth;
+
+public interface ITokenService
 {
-    internal class ITokenService
-    {
-    }
+    public string GenerateToken(User user);
 }
