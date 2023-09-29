@@ -1,12 +1,10 @@
+using System.Net;
+
 namespace Fitness.Service.Exceptions;
 
-public class NotFoundException : Exception
+public  class NotFoundException : Exception
 {
-    public NotFoundException(string message) : base(message)
-    { }
+    public HttpStatusCode StatusCode { get; } = HttpStatusCode.NotFound;
 
-    public NotFoundException(string message, Exception innerException) : base(message, innerException)
-    { }
-
-    public int StatusCode { get; set; } = 404;
+    public string TitleMessage { get; protected set; } = String.Empty;
 }
