@@ -19,20 +19,7 @@ public class AuthService : IAuthService
 
     public Task<(bool Result, int CachedMinutes)> RegisterAsync(UserCreationDto dto)
     {
-        var user = await _userRepository.GetByEmailAsync(dto.IdentityProvider);
-        if (user is not null)
-            throw new UserAlreadyExsistExceptions();
-
-        if (_memoryCache.TryGetValue(REGISTER_CACHE_KEY + dto.IdentityProvider, out RegisterDto registrDto))
-        {
-            registrDto.IdentityProvider = registrDto.IdentityProvider;
-            _memoryCache.Remove(dto.IdentityProvider);
-        }
-        else
-        {
-            _memoryCache.Set(REGISTER_CACHE_KEY + dto.IdentityProvider, dto, TimeSpan.FromMinutes(CACHED_FOR_MINUTS_REGISTER));
-        }
-        return (Result: true, CachedMinutes: CACHED_FOR_MINUTS_REGISTER);
+        throw new NotImplementedException();
     }
 
     public Task<(bool Result, int CachedMinutes)> ResetPasswordAsync(ForgotPasswordDto dto)
