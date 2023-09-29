@@ -16,7 +16,6 @@ namespace Fitness.Api.Controllers.Auth
             this._authService = authService;
         }
 
-
         [HttpPost("login")]
         [AllowAnonymous]
         public async Task<IActionResult> LoginAsync([FromForm] UserLoginDto dto)
